@@ -50,7 +50,8 @@ describe('test buffed', function() {
   ].forEach(function(arg) {
     var builder, explain;
 
-    explain = arg[0], builder = arg[1];
+    explain = arg[0];
+    builder = arg[1];
 
     describe(explain, function() {
 
