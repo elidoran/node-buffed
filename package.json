@@ -1,0 +1,58 @@
+{
+  "name": "buffed",
+  "version": "0.1.0",
+  "description": "Acts as a stream to send a buffer, gather buffers, or both.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js"
+  ],
+  "keywords": [
+    "buffer to stream",
+    "buffer stream",
+    "stream to buffer",
+    "stream buffer",
+    "stream from buffer",
+    "buffer from stream",
+    "convert",
+    "buffer",
+    "stream",
+    "source",
+    "sink",
+    "pipe",
+    "piping",
+    "readable",
+    "writable",
+    "duplex",
+    "io",
+    "input",
+    "output",
+    "memory"
+  ],
+  "author": "Eli Doran <eli+npm@elidoran.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "_mocha --R spec --bail --check-leaks test/lib",
+    "test4": "nave use 4.8 npm test",
+    "test6": "nave use 6.10 npm test",
+    "test7": "nave use 7.10 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test7",
+    "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib",
+    "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- -R spec test/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elidoran/node-buffed.git"
+  },
+  "bugs": "http://github.com/elidoran/node-buffed/issues",
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "through2": "^2.0.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=4"
+  }
+}
