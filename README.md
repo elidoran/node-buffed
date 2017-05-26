@@ -35,17 +35,17 @@ var buffer = getSomeBuffer()
 
 // Piping out: Buffed as a source
 
-// 1a. create instance with string to pipe out
+// 1a. create instance with buffer to pipe out
 var buffed = require('buffed')(buffer)
 
-// 1b. pipe string to another stream
+// 1b. pipe buffer to another stream
 buffed.pipe(anotherStream)
 
 
 // 2a. get buffed function to use to create instances
 var Buffed = require('buffed')
 
-// 2b. create an instance with a string and pipe it to another stream
+// 2b. create an instance with a buffer and pipe it to another stream
 Buffed(buffer).pipe(anotherStream)
 
 //  or:
@@ -63,7 +63,7 @@ var sink = Buffed()
 // combine 3a and 3b:
 var sink = require('buffed')()
 
-// 3c. use event to get full string from sink
+// 3c. use event to get full buffer from sink
 sink.on('finish', function() {
   console.log('collected buffers:',sink.buffers)
   console.log('as single buffer:', sink.combine())
@@ -78,7 +78,7 @@ anotherStream.pipe(sink)
 // 4a. get instance from function (like 1a)
 var buffed = require('buffed')(buffer)
 
-// 4b. use event to get full string from it
+// 4b. use event to get full buffer from it
 buffed.on('finish', function() {
   console.log('collected buffers:',sink.buffers)
   console.log('as single buffer:', sink.combine())
@@ -99,7 +99,7 @@ var source = buffed(buffer)
 // 5c. create a sink
 var sink = buffed()
 
-// 5d. use event to get full string from sink
+// 5d. use event to get full buffer from sink
 sink.on('finish', function() {
   console.log('collected buffers:',sink.buffers)
   console.log('as single buffer:', sink.combine())
@@ -114,14 +114,14 @@ source.pipe(anotherStream).pipe(sink)
 // 6a. get class
 var Buffed = require('buffed').Buffed
 
-// 6b. create an instance as a source (has a string) (can be a sink, too)
+// 6b. create an instance as a source (has a buffer) (can be a sink, too)
 var source = new Buffed(buffer)
 
-// 6c. create an instance as a sink (no string)
+// 6c. create an instance as a sink (no buffer)
 var sink = new Buffed
 
 
-// Reset buffed instance with new string
+// Reset buffed instance with new buffer
 
 // 7a. create a buffed instance
 var buffed = require('buffed')(buffer)
@@ -135,7 +135,7 @@ buffed.on('finish', function() {
   buffed.reset(getNewBuffer()).pipe(differentStream).pipe(buffed)
 
   // OR:
-  // 7e. call pipe with a string which does a reset and returns itself
+  // 7e. call pipe with a buffer which does a reset and returns itself
   buffed.pipe(getNewBuffer()).pipe(differentStream).pipe(buffed)
 })
 
