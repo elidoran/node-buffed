@@ -36,7 +36,7 @@
     "test6": "nave use 6.12 npm test",
     "test8": "nave use 8.9 npm test",
     "test9": "nave use 9.5 npm test",
-    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm rumn test9",
+    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test9",
     "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib"
   },
   "repository": {
