@@ -1,3 +1,8 @@
+## 0.2.1 - Released 2018/07/18
+
+1. drop node 9, add node 10
+2. remove gemnasium badge (bought by GitLab)
+
 ## 0.2.0 - Released 2018/02/07
 
 1. update Travis to use main coverage script, remove node 7, add node's 8 and 9
