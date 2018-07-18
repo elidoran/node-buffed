@@ -1,6 +1,5 @@
 # buffed
 [![Build Status](https://travis-ci.org/elidoran/node-buffed.svg?branch=master)](https://travis-ci.org/elidoran/node-buffed)
-[![Dependency Status](https://gemnasium.com/elidoran/node-buffed.png)](https://gemnasium.com/elidoran/node-buffed)
 [![npm version](https://badge.fury.io/js/buffed.svg)](http://badge.fury.io/js/buffed)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/node-buffed/badge.svg?branch=master)](https://coveralls.io/github/elidoran/node-buffed?branch=master)
 
