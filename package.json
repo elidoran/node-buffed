@@ -31,13 +31,13 @@
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
   "scripts": {
-    "test": "_mocha --R spec --bail --check-leaks test/lib",
-    "test4": "nave use 4.8 npm test",
-    "test6": "nave use 6.12 npm test",
-    "test8": "nave use 8.9 npm test",
-    "test9": "nave use 9.5 npm test",
-    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test9",
-    "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib"
+    "test": "_mocha --R spec --bail --check-leaks test/lib/*.js",
+    "test4": "nave use 4.9 npm test",
+    "test6": "nave use 6.14 npm test",
+    "test8": "nave use 8.11 npm test",
+    "test10": "nave use 10.6 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
+    "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib/*.js"
   },
   "repository": {
     "type": "git",
@@ -45,9 +45,9 @@
   },
   "bugs": "http://github.com/elidoran/node-buffed/issues",
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
-    "mocha": "^5.0.0",
+    "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "through2": "^2.0.3"
   },
