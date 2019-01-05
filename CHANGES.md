@@ -4,6 +4,7 @@
 2. update deps
 3. rename 'test-all' to 'tests'
 4. rewrite as a class
+5. replace "new Buffer" with "Buffer.alloc".
 
 
 ## 0.2.1 - Released 2018/07/18
