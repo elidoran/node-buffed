@@ -1,6 +1,6 @@
 {
   "name": "buffed",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Acts as a stream to send a buffer, gather buffers, or both.",
   "main": "lib/index.js",
   "files": [
