@@ -1,6 +1,6 @@
 {
   "name": "buffed",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Acts as a stream to send a buffer, gather buffers, or both.",
   "main": "lib/index.js",
   "files": [
@@ -32,11 +32,11 @@
   "license": "MIT",
   "scripts": {
     "test": "_mocha --R spec --bail --check-leaks test/lib/*.js",
-    "test4": "nave use 4.9 npm test",
-    "test6": "nave use 6.14 npm test",
-    "test8": "nave use 8.11 npm test",
-    "test10": "nave use 10.6 npm test",
-    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
+    "test6": "nave use 6 npm test",
+    "test8": "nave use 8 npm test",
+    "test10": "nave use 10 npm test",
+    "test11": "nave use 11 npm test",
+    "tests": "npm run test6 && npm run test8 && npm run test10 && npm run test11",
     "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib/*.js"
   },
   "repository": {
@@ -53,6 +53,6 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   }
 }
