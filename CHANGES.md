@@ -1,3 +1,11 @@
+## 1.0.0 - Released 2019/01/04
+
+1. drop node 4, add node 11
+2. update deps
+3. rename 'test-all' to 'tests'
+4. rewrite as a class
+
+
 ## 0.2.1 - Released 2018/07/18
 
 1. drop node 9, add node 10
