@@ -45,11 +45,11 @@
   },
   "bugs": "http://github.com/elidoran/node-buffed/issues",
   "devDependencies": {
-    "coveralls": "^3.0.2",
+    "coveralls": "^3.0.3",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "mocha-lcov-reporter": "^1.3.0",
-    "through2": "^3.0.0"
+    "through2": "^3.0.1"
   },
   "dependencies": {},
   "engines": {
