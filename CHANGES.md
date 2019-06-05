@@ -1,3 +1,10 @@
+## 1.0.1 -
+
+1. update deps and fix vulnerabilities
+2. drop node 11 and add node 12 to Travis CI
+3. add 3 OS's to Travis CI
+4. add 'use strict' to JS file.
+
 ## 1.0.0 - Released 2019/01/04
 
 1. drop node 4, add node 11
