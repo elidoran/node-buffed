@@ -35,8 +35,8 @@
     "test6": "nave use 6 npm test",
     "test8": "nave use 8 npm test",
     "test10": "nave use 10 npm test",
-    "test11": "nave use 11 npm test",
-    "tests": "npm run test6 && npm run test8 && npm run test10 && npm run test11",
+    "test12": "nave use 12 npm test",
+    "tests": "npm run test6 && npm run test8 && npm run test10 && npm run test12",
     "coverage": "istanbul cover -x 'build/**' _mocha -- -R spec test/lib/*.js"
   },
   "repository": {
